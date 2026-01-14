@@ -113,8 +113,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="#">
-                  Careers
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/blogs"
+                >
+                  Insights
                 </Link>
               </li>
               <li>

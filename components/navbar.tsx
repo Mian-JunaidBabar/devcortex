@@ -37,6 +37,12 @@ export const Navbar = () => {
             </Link>
             <Link
               className="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
+              href="/blogs"
+            >
+              Insights
+            </Link>
+            <Link
+              className="text-sm font-medium text-slate-600 hover:text-primary transition-colors"
               href="/about"
             >
               About
@@ -84,6 +90,13 @@ export const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Work
+              </Link>
+              <Link
+                className="text-sm font-medium text-slate-600 hover:text-primary transition-colors py-2"
+                href="/blogs"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Insights
               </Link>
               <Link
                 className="text-sm font-medium text-slate-600 hover:text-primary transition-colors py-2"
