@@ -38,3 +38,66 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Custom background patterns */
+.neural-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.mesh-gradient {
+  background: radial-gradient(
+      circle at 50% 50%,
+      rgba(37, 99, 235, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(234, 42, 51, 0.05) 0%,
+      transparent 50%
+    );
+}
+
+/* Tech noise pattern */
+.tech-noise {
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px, 80px 80px;
+  background-position: 0 0, 25px 25px;
+}
+
+/* Founder card gradient background */
+.founder-card-bg {
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(248, 250, 252, 1) 100%
+  );
+}
+
+/* Blob animation */
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
