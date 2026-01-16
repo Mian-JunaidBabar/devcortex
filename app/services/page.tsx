@@ -28,7 +28,7 @@ export default function ServicesPage() {
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight text-slate-900">
             End-to-End <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-primary">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600">
               Digital Solutions
             </span>
           </h1>
@@ -37,7 +37,7 @@ export default function ServicesPage() {
             on speed, scalability, and intelligence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary text-white h-12 px-8 rounded-full font-bold hover:bg-primary-dark transition-all transform hover:scale-105 shadow-xl shadow-primary/20 flex items-center justify-center gap-2">
+            <button className="bg-blue-600 text-white h-12 px-8 rounded-full font-bold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-xl shadow-blue-600/20 flex items-center justify-center gap-2">
               View Packages
               <span className="text-sm">↓</span>
             </button>
@@ -70,6 +70,7 @@ export default function ServicesPage() {
                 </p>
               </div>
 
+              {/* LEFT COLUMN: Rapid Launch (BLUE) */}
               <div className="col-span-12 md:col-span-6 lg:col-span-4 p-8 bg-white relative group">
                 <div className="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
                 <div className="flex items-center gap-3 mb-6">
@@ -121,11 +122,13 @@ export default function ServicesPage() {
                 </ul>
               </div>
 
+              {/* RIGHT COLUMN: Enterprise Scale (RED/CUSTOM) */}
+              {/* Changed 'bg-primary' and 'text-primary' to 'red' colors to match image */}
               <div className="col-span-12 md:col-span-6 lg:col-span-4 p-8 bg-slate-50/50 relative group">
-                <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+                <div className="absolute top-0 left-0 w-full h-1 bg-red-500"></div>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-red-50 rounded-lg">
-                    <Database className="w-6 h-6 text-primary" />
+                    <Database className="w-6 h-6 text-red-600" />
                   </div>
                   <h4 className="text-lg font-bold text-slate-900">
                     Enterprise Scale (Custom)
@@ -138,7 +141,8 @@ export default function ServicesPage() {
                     </span>
                     <div className="flex items-center gap-3">
                       <span className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
-                        <div className="bg-primary h-full w-[40%] rounded-full shadow-sm"></div>
+                        {/* Changed bar color to red */}
+                        <div className="bg-red-500 h-full w-[40%] rounded-full shadow-sm"></div>
                       </span>
                       <span className="text-sm font-bold text-slate-700 whitespace-nowrap">
                         Phased (Weeks)
@@ -183,7 +187,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Core Capabilities
             </h2>
-            <div className="w-24 h-1.5 bg-primary rounded-full"></div>
+            <div className="w-24 h-1.5 bg-blue-600 rounded-full"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="flex flex-col gap-6">
@@ -214,7 +218,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-col gap-6">
-              <div className="size-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-primary mb-2">
+              <div className="size-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-red-600 mb-2">
                 <Lightbulb className="w-8 h-8" />
               </div>
               <div>
@@ -229,13 +233,13 @@ export default function ServicesPage() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-auto">
-                <span className="px-3 py-1 bg-red-50 text-primary text-xs font-bold rounded-full">
+                <span className="px-3 py-1 bg-red-50 text-red-600 text-xs font-bold rounded-full">
                   LLMs
                 </span>
-                <span className="px-3 py-1 bg-red-50 text-primary text-xs font-bold rounded-full">
+                <span className="px-3 py-1 bg-red-50 text-red-600 text-xs font-bold rounded-full">
                   Vector DB
                 </span>
-                <span className="px-3 py-1 bg-red-50 text-primary text-xs font-bold rounded-full">
+                <span className="px-3 py-1 bg-red-50 text-red-600 text-xs font-bold rounded-full">
                   Zapier
                 </span>
               </div>
@@ -327,11 +331,11 @@ export default function ServicesPage() {
             </div>
 
             {/* Professional (Featured) */}
-            <div className="bg-gradient-to-b from-slate-900 to-slate-800 rounded-[2rem] p-8 shadow-2xl shadow-primary/20 border border-slate-700 relative flex flex-col h-full transform md:-translate-y-4">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-primary to-red-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
+            <div className="bg-gradient-to-b from-slate-900 to-slate-800 rounded-[2rem] p-8 shadow-2xl shadow-blue-600/20 border border-slate-700 relative flex flex-col h-full transform md:-translate-y-4">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-600 to-red-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
                 Most Popular
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-[2rem] pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent rounded-[2rem] pointer-events-none"></div>
 
               <div className="mb-6 relative z-10">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-slate-800 text-white text-xs font-extrabold uppercase tracking-wide mb-4 ring-1 ring-white/10">
@@ -350,27 +354,27 @@ export default function ServicesPage() {
               <div className="w-full h-px bg-slate-700 mb-8 relative z-10"></div>
               <ul className="space-y-4 mb-8 flex-1 relative z-10">
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                   <span>Next.js Custom Build</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                   <span>Performance Ad Campaign Setup</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                   <span>Advanced API Integrations</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                   <span>CMS for Marketing Team</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                   <span>1 Month Support Included</span>
                 </li>
               </ul>
-              <button className="w-full py-4 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25 relative z-10">
+              <button className="w-full py-4 rounded-full bg-blue-600 text-white font-bold hover:bg-blue-500 transition-colors shadow-lg shadow-blue-600/25 relative z-10">
                 Select Professional
               </button>
             </div>
@@ -425,12 +429,12 @@ export default function ServicesPage() {
             Schedule a 15-minute discovery call to discuss your architecture.
           </p>
           <div className="flex items-center justify-center gap-6 flex-wrap">
-            <button className="bg-primary text-white h-14 px-10 rounded-full font-bold hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25 text-lg">
+            <button className="bg-blue-600 text-white h-14 px-10 rounded-full font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/25 text-lg">
               Start Project
             </button>
             <Link
               href="/work"
-              className="text-slate-900 font-bold hover:text-primary transition-colors hover:underline underline-offset-4"
+              className="text-slate-900 font-bold hover:text-blue-600 transition-colors hover:underline underline-offset-4"
             >
               View Portfolio
             </Link>
