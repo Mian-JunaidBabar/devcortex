@@ -14,10 +14,10 @@ export default function ServicesPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden bg-gradient-to-b from-slate-50 to-white pt-20 pb-24 lg:pt-32 lg:pb-32 border-b border-slate-100">
+      <section className="relative w-full overflow-hidden bg-linear-to-b from-slate-50 to-white pt-20 pb-24 lg:pt-32 lg:pb-32 border-b border-slate-100">
         <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none mix-blend-multiply"></div>
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 mb-8 shadow-sm">
@@ -28,7 +28,7 @@ export default function ServicesPage() {
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight text-slate-900">
             End-to-End <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-red-600">
               Digital Solutions
             </span>
           </h1>
@@ -309,19 +309,19 @@ export default function ServicesPage() {
               <div className="w-full h-px bg-slate-100 mb-8"></div>
               <ul className="space-y-4 mb-8 flex-1">
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                   <span>WordPress CMS Setup</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                   <span>Basic SEO Configuration</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                   <span>Mobile Responsive Design</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                   <span>Google Analytics Integration</span>
                 </li>
               </ul>
@@ -331,11 +331,11 @@ export default function ServicesPage() {
             </div>
 
             {/* Professional (Featured) */}
-            <div className="bg-gradient-to-b from-slate-900 to-slate-800 rounded-[2rem] p-8 shadow-2xl shadow-blue-600/20 border border-slate-700 relative flex flex-col h-full transform md:-translate-y-4">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-600 to-red-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
+            <div className="bg-linear-to-b from-slate-900 to-slate-800 rounded-[2rem] p-8 shadow-2xl shadow-blue-600/20 border border-slate-700 relative flex flex-col h-full transform md:-translate-y-4">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-linear-to-r from-blue-600 to-red-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
                 Most Popular
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent rounded-[2rem] pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-blue-600/10 to-transparent rounded-[2rem] pointer-events-none"></div>
 
               <div className="mb-6 relative z-10">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-slate-800 text-white text-xs font-extrabold uppercase tracking-wide mb-4 ring-1 ring-white/10">
@@ -354,23 +354,23 @@ export default function ServicesPage() {
               <div className="w-full h-px bg-slate-700 mb-8 relative z-10"></div>
               <ul className="space-y-4 mb-8 flex-1 relative z-10">
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                   <span>Next.js Custom Build</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                   <span>Performance Ad Campaign Setup</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                   <span>Advanced API Integrations</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                   <span>CMS for Marketing Team</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-100">
-                  <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                   <span>1 Month Support Included</span>
                 </li>
               </ul>
@@ -395,19 +395,19 @@ export default function ServicesPage() {
               <div className="w-full h-px bg-slate-100 mb-8"></div>
               <ul className="space-y-4 mb-8 flex-1">
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
                   <span>Full SaaS Product Development</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
                   <span>Dedicated AI Engineer Retainer</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
                   <span>Cloud Infrastructure Architecture</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-700">
-                  <CheckCircle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
                   <span>Enterprise SLA Support</span>
                 </li>
               </ul>

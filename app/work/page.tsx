@@ -81,55 +81,39 @@ export default function WorkPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-20 pb-12 md:pt-32 md:pb-20 overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl">
-            {/* Badge is using Red theme */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-50 dark:bg-red-900/20 text-red-600 rounded-full text-xs font-bold uppercase tracking-wider mb-6 border border-red-100 dark:border-red-900/30">
-              <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+      <section className="relative w-full overflow-hidden bg-linear-to-b from-slate-50 to-white pt-20 pb-24 lg:pt-32 lg:pb-32 border-b border-slate-100">
+        <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none mix-blend-multiply"></div>
+        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 mb-8 shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+            <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">
               Latest Works
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight text-slate-900 leading-[1.1] mb-6">
-              Engineered for <br className="hidden md:block" />
-              <span className="text-red-600 relative inline-block">
-                Impact
-                <svg
-                  className="absolute w-full h-3 -bottom-1 left-0 text-red-600/20"
-                  preserveAspectRatio="none"
-                  viewBox="0 0 100 10"
-                >
-                  <path
-                    d="M0 5 Q 50 10 100 5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="8"
-                  ></path>
-                </svg>
-              </span>
-            </h1>
-
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
-              We build high-performance digital products that drive measurable
-              results across industries. Precision engineering meets strategic
-              design.
-            </p>
+            </span>
           </div>
-        </div>
 
-        {/* Abstract Background Decoration */}
-        <div className="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-30 pointer-events-none">
-          <div className="absolute top-1/4 right-0 w-96 h-96 bg-gray-200 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          {/* Using Red blob to match theme */}
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-red-100 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight text-slate-900">
+            Engineered for <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-red-600">
+              Impact
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+            We build high-performance digital products that drive measurable
+            results across industries. Precision engineering meets strategic
+            design.
+          </p>
         </div>
       </section>
 
       {/* Filters & Grid Section */}
-      <section className="pb-24">
+      <section className="py-24 bg-slate-50 relative">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Tab Filters */}
-          <div className="mb-12 border-b border-gray-200 dark:border-gray-800">
+          <div className="mb-12 border-b border-slate-100">
             <div className="flex overflow-x-auto gap-8 no-scrollbar pb-1">
               {filterTabs.map((tab) => (
                 <button
@@ -138,7 +122,7 @@ export default function WorkPage() {
                   className={`group relative pb-4 font-bold text-sm whitespace-nowrap transition-colors ${
                     activeFilter === tab.id
                       ? "text-red-600"
-                      : "text-gray-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white"
+                      : "text-slate-600 hover:text-slate-900"
                   }`}
                 >
                   {tab.label}
@@ -233,7 +217,7 @@ export default function WorkPage() {
 
           {/* Load More */}
           <div className="mt-20 flex justify-center">
-            <button className="group flex items-center justify-center gap-2 h-12 px-8 border-2 border-gray-200 dark:border-gray-700 hover:border-red-600 bg-transparent text-slate-900 dark:text-white hover:text-red-600 text-sm font-bold rounded transition-all duration-300">
+            <button className="group flex items-center justify-center gap-2 h-12 px-8 border-2 border-gray-200 dark:border-gray-700 hover:border-red-600 bg-transparent text-slate-900 dark:text-dark hover:text-red-600 text-sm font-bold rounded transition-all duration-300">
               <Plus className="w-5 h-5" />
               Load More Projects
             </button>
