@@ -1,16 +1,27 @@
-import dotenv from "dotenv";
-
 /**
  * Seed Script for DevCortex
  *
  * Usage:
  * 1. Add SANITY_API_WRITE_TOKEN to your .env.local
- * 2. Run: node scripts/seed-data.mjs
+ * 2. Run from repo root:   node scripts/seed-data.mjs
+ *    Run from /scripts:    node seed-data.mjs
  */
 import { createClient } from "@sanity/client";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+import dotenv from "dotenv";
 
-// Load environment variables from .env.local
-dotenv.config({ path: ".env.local" });
+// Load environment variables from .env.local (relative to repo root, not CWD)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const envPath = path.resolve(__dirname, "..", ".env.local");
+
+const dotenvResult = dotenv.config({ path: envPath });
+if (dotenvResult.error) {
+  console.warn(
+    `⚠️  dotenv could not load ${envPath}. Continuing with existing process.env values.`,
+  );
+}
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
