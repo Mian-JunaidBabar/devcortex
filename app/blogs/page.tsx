@@ -113,14 +113,16 @@ export default function BlogsPage() {
   const filteredBlogs = otherBlogs.filter(
     (blog) =>
       blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      blog.description.toLowerCase().includes(searchQuery.toLowerCase())
+      blog.description.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-12 pb-16 lg:pt-16">
-        <div className="absolute inset-0 neural-bg opacity-50 pointer-events-none"></div>
+      <section className="relative w-full overflow-hidden bg-gradient-to-b from-slate-50 to-white pt-12 pb-16 lg:pt-16 border-b border-slate-100">
+        <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none mix-blend-multiply"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="mb-8">
             <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">
@@ -190,7 +192,7 @@ export default function BlogsPage() {
       </section>
 
       {/* Main Content Section */}
-      <section className="pb-24">
+      <section className="py-24 bg-slate-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Blog Grid */}
@@ -220,8 +222,8 @@ export default function BlogsPage() {
                             blog.category === "Development"
                               ? "text-primary border-orange-100"
                               : blog.category === "Business"
-                              ? "text-blue-600 border-blue-100"
-                              : "text-purple-600 border-purple-100"
+                                ? "text-blue-600 border-blue-100"
+                                : "text-purple-600 border-purple-100"
                           }`}
                         >
                           {blog.category}

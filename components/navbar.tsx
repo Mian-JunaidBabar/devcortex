@@ -10,10 +10,10 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   const navLinks = [
+    { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Work", href: "/work" },
     { name: "Insights", href: "/blogs" },
-    { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -21,7 +21,6 @@ export const Navbar = () => {
     <div className="w-full bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
           {/* LOGO SECTION */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* Brain Icon (Blue/Red Split) */}
@@ -76,7 +75,7 @@ export const Navbar = () => {
                 </Link>
               );
             })}
-            
+
             <div className="ml-4">
               <button className="bg-red-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-red-700 transition-colors shadow-lg shadow-red-600/20">
                 Get Started
