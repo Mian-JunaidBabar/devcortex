@@ -51,15 +51,8 @@ export default async function BlogsPage() {
                   ))
                 ) : posts.length <= 1 ? (
                   <div className="col-span-full text-center py-12">
-                    <p className="text-slate-500 text-lg">
-                      No additional articles found. Add more in the{" "}
-                      <Link
-                        href="/studio"
-                        className="text-red-600 hover:underline"
-                      >
-                        Sanity Studio
-                      </Link>
-                      .
+                    <p className="text-slate-500 text-lg font-medium">
+                      📝 Fresh insights coming soon!
                     </p>
                   </div>
                 ) : null}

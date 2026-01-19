@@ -70,12 +70,8 @@ export default async function WorkPage() {
               ))
             ) : (
               <div className="col-span-full text-center py-16">
-                <p className="text-slate-500 text-lg">
-                  No projects found. Add some in the{" "}
-                  <Link href="/studio" className="text-red-600 hover:underline">
-                    Sanity Studio
-                  </Link>
-                  .
+                <p className="text-slate-500 text-lg font-medium">
+                  🚀 Exciting projects coming soon!
                 </p>
               </div>
             )}
