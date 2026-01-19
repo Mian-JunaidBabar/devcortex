@@ -1,4 +1,4 @@
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { type SanityImageSource } from "@sanity/image-url";
 import { urlForImage } from "@/sanity/lib/image";
 import { PortableTextBlock } from "next-sanity";
 import { client } from "@/sanity/lib/client";
