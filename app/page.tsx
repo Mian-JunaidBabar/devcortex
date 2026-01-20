@@ -34,10 +34,13 @@ export default function Home() {
             strategies to scale your digital footprint.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary text-white h-14 px-8 rounded-full font-bold hover:bg-red-600 transition-all transform hover:scale-105 shadow-xl shadow-primary/20 flex items-center justify-center gap-2 text-lg">
+            <Link
+              href="/contact"
+              className="bg-primary text-white h-14 px-8 rounded-full font-bold hover:bg-red-600 transition-all transform hover:scale-105 shadow-xl shadow-primary/20 flex items-center justify-center gap-2 text-lg"
+            >
               Book a Strategy Call
               <Calendar className="w-4 h-4" />
-            </button>
+            </Link>
             <Link
               href="/work"
               className="bg-white border border-gray-200 text-slate-700 h-14 px-8 rounded-full font-bold hover:border-gray-400 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 text-lg shadow-sm"
@@ -92,7 +95,7 @@ export default function Home() {
             {/* Enterprise Scale Card */}
             <div className="group relative bg-blue-50/50 rounded-3xl p-10 border border-blue-100 hover:border-blue-300 transition-all hover:shadow-2xl hover:shadow-blue-500/10">
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                <Database className="w-[120px] h-[120px] text-accent-blue" />
+                <Database className="w-30 h-30 text-accent-blue" />
               </div>
               <div className="relative z-10">
                 <div className="size-14 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-6 text-accent-blue border border-blue-100">

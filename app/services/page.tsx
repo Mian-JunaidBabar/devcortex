@@ -41,9 +41,12 @@ export default function ServicesPage() {
               View Packages
               <span className="text-sm">↓</span>
             </button>
-            <button className="bg-white border border-slate-300 text-slate-700 h-12 px-8 rounded-full font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors flex items-center justify-center gap-2 shadow-sm">
+            <Link
+              href="/contact"
+              className="bg-white border border-slate-300 text-slate-700 h-12 px-8 rounded-full font-bold hover:bg-slate-50 hover:border-slate-400 transition-colors flex items-center justify-center gap-2 shadow-sm"
+            >
               Book Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -411,9 +414,12 @@ export default function ServicesPage() {
                   <span>Enterprise SLA Support</span>
                 </li>
               </ul>
-              <button className="w-full py-4 rounded-full border border-slate-900 bg-slate-900 text-white font-bold hover:bg-slate-800 transition-colors shadow-lg">
+              <Link
+                href="/contact"
+                className="w-full py-4 rounded-full border border-slate-900 bg-slate-900 text-white font-bold hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center"
+              >
                 Contact Sales
-              </button>
+              </Link>
             </div>
           </div>
         </div>

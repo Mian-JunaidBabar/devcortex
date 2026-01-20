@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   Code,
   Zap,
@@ -18,8 +19,8 @@ export default function AboutPage() {
       <div className="relative w-full overflow-hidden bg-white pt-24 pb-32">
         <div className="absolute inset-0 tech-noise opacity-[0.03] pointer-events-none"></div>
         {/* Updated Blobs to Blue & Red */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50/80 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-50/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-50/80 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-50/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-8">
@@ -33,7 +34,7 @@ export default function AboutPage() {
             Two Brains.
             <br />
             {/* Gradient updated to Blue -> Red */}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-red-600">
               One Outcome.
             </span>
           </h1>
@@ -51,7 +52,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-stretch">
             {/* CTO Card (BLUE - Tech) */}
             <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-linear-to-b from-blue-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full bg-white rounded-[2rem] border border-slate-200 p-8 lg:p-12 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
                 <div className="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
 
@@ -109,7 +110,7 @@ export default function AboutPage() {
 
             {/* COO Card (RED - Strategy - Changed from Orange) */}
             <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-b from-red-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-linear-to-b from-red-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full bg-white rounded-[2rem] border border-slate-200 p-8 lg:p-12 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
                 <div className="absolute top-0 left-0 w-full h-2 bg-red-600"></div>
 
@@ -201,19 +202,19 @@ export default function AboutPage() {
 
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                   <span className="text-slate-700 font-medium">
                     Data-First Decision Making
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                   <span className="text-slate-700 font-medium">
                     Rapid Iteration Cycles
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                   <span className="text-slate-700 font-medium">
                     Scalable Architecture by Default
                   </span>
@@ -340,8 +341,8 @@ export default function AboutPage() {
       <div className="py-24 bg-white text-slate-900 overflow-hidden relative border-t border-slate-100">
         <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none"></div>
         {/* Background Gradients consistent with Theme */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-100/50 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-125 h-125 bg-blue-100/50 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-125 h-125 bg-red-100/50 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tight text-slate-900">
@@ -354,12 +355,18 @@ export default function AboutPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-red-600 text-white h-14 px-8 rounded-full font-bold hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl shadow-red-600/25 flex items-center justify-center gap-2 text-lg">
+            <Link
+              href="/contact"
+              className="bg-red-600 text-white h-14 px-8 rounded-full font-bold hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl shadow-red-600/25 flex items-center justify-center gap-2 text-lg"
+            >
               Book a Strategy Call
-            </button>
-            <button className="bg-white border border-slate-200 text-slate-900 h-14 px-8 rounded-full font-bold hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 text-lg shadow-sm">
+            </Link>
+            <Link
+              href="/work"
+              className="bg-white border border-slate-200 text-slate-900 h-14 px-8 rounded-full font-bold hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 text-lg shadow-sm"
+            >
               View Case Studies
-            </button>
+            </Link>
           </div>
         </div>
       </div>
