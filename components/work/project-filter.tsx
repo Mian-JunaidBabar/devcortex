@@ -30,7 +30,7 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
   return (
     <>
       {/* Tab Filters */}
-      <div className="mb-12 border-b border-slate-200 dark:border-slate-800">
+      <div className="mb-12 border-b border-slate-100">
         <div className="flex overflow-x-auto gap-8 no-scrollbar pb-1">
           {filterTabs.map((tab) => (
             <button
@@ -38,14 +38,14 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
               onClick={() => setActiveFilter(tab.id)}
               className={`group relative pb-4 font-bold text-sm whitespace-nowrap transition-colors ${
                 activeFilter === tab.id
-                  ? "text-orange-500"
-                  : "text-slate-500 hover:text-slate-900 dark:hover:text-white"
+                  ? "text-red-600"
+                  : "text-slate-600 hover:text-slate-900"
               }`}
             >
               {tab.label}
               <motion.span
                 layoutId="activeTab"
-                className={`absolute bottom-0 left-0 h-0.5 bg-orange-500 ${
+                className={`absolute bottom-0 left-0 h-0.5 bg-red-600 ${
                   activeFilter === tab.id ? "w-full" : "w-0"
                 }`}
                 initial={false}
@@ -87,9 +87,9 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
 
 function ProjectCard({ project }: { project: Project }) {
   const categoryColors: Record<string, string> = {
-    SaaS: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-    AI: "bg-purple-500/10 text-purple-400 border-purple-500/20",
-    Marketing: "bg-green-500/10 text-green-400 border-green-500/20",
+    SaaS: "bg-gray-100 text-gray-600",
+    AI: "bg-purple-50 text-purple-700",
+    Marketing: "bg-green-50 text-green-700",
   };
 
   return (
@@ -99,12 +99,12 @@ function ProjectCard({ project }: { project: Project }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="group relative bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all duration-300"
+      className="group card-zoom flex flex-col bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
     >
       {/* Image Container */}
-      <div className="relative w-full overflow-hidden">
-        <div className="aspect-16/10 overflow-hidden relative">
-          <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent z-10" />
+      <div className="relative w-full overflow-hidden bg-gray-100">
+        <div className="aspect-video overflow-hidden relative">
+          <div className="absolute inset-0 bg-gray-900/5 group-hover:bg-gray-900/0 transition-colors z-10"></div>
           {project.mainImage ? (
             <img
               src={project.mainImage}
@@ -112,8 +112,8 @@ function ProjectCard({ project }: { project: Project }) {
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
           ) : (
-            <div className="w-full h-full bg-linear-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-              <span className="text-6xl font-black text-slate-700">
+            <div className="w-full h-full bg-linear-to-br from-slate-200 to-slate-300 flex items-center justify-center">
+              <span className="text-4xl font-black text-slate-400">
                 {project.title.charAt(0)}
               </span>
             </div>
@@ -121,11 +121,11 @@ function ProjectCard({ project }: { project: Project }) {
 
           {/* Floating Metric Badge */}
           {project.resultMetric && (
-            <div className="absolute top-4 right-4 z-20 bg-slate-950/90 backdrop-blur-sm border border-orange-500/30 px-4 py-2 rounded-lg">
-              <span className="block text-[10px] text-slate-400 font-semibold uppercase tracking-wider">
+            <div className="absolute top-4 right-4 z-20 bg-white/95 backdrop-blur shadow-lg border-l-4 border-red-600 px-4 py-2 rounded-sm">
+              <span className="block text-xs text-gray-500 font-semibold uppercase tracking-wider">
                 Result
               </span>
-              <span className="block text-lg font-black text-orange-500">
+              <span className="block text-lg font-black text-red-600">
                 {project.resultMetric}
               </span>
             </div>
@@ -134,13 +134,12 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {/* Content */}
-      <div className="p-6 md:p-8">
+      <div className="flex flex-col grow p-6 md:p-8">
         <div className="flex flex-wrap gap-2 mb-4">
           {/* Category Tag */}
           <span
-            className={`px-3 py-1 text-xs font-bold rounded-full border uppercase tracking-wide ${
-              categoryColors[project.category] ||
-              "bg-slate-800 text-slate-400 border-slate-700"
+            className={`px-2.5 py-1 text-xs font-bold rounded-sm uppercase tracking-wide ${
+              categoryColors[project.category] || "bg-gray-100 text-gray-600"
             }`}
           >
             {project.category}
@@ -150,29 +149,31 @@ function ProjectCard({ project }: { project: Project }) {
           {project.tech?.slice(0, 2).map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 text-xs font-medium rounded-full bg-slate-800 text-slate-300 border border-slate-700"
+              className="px-2.5 py-1 text-xs font-bold rounded-sm uppercase tracking-wide bg-red-50 text-red-700"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+        <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2 transition-colors">
           {project.title}
         </h3>
 
-        <p className="text-slate-400 mb-6 line-clamp-2">{project.tagline}</p>
+        <p className="text-gray-600 dark:text-gray-300 mb-6 line-clamp-2">
+          {project.tagline}
+        </p>
 
-        <div className="flex items-center justify-between pt-6 border-t border-slate-800">
-          <span className="text-xs font-medium text-slate-500 uppercase tracking-wider">
+        <div className="mt-auto pt-6 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+          <span className="text-xs font-medium text-gray-400">
             {project.status}
           </span>
           <Link
             href={`/work/${project.slug}`}
-            className="flex items-center gap-2 text-sm font-bold text-white group-hover:text-orange-400 transition-colors"
+            className="flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white group-hover:text-red-600 transition-colors"
           >
             View Case Study
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
