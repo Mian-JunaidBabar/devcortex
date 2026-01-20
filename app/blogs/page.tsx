@@ -16,9 +16,9 @@ export default async function BlogsPage() {
   const otherPosts = posts.slice(1);
 
   return (
-    <main className="min-h-screen bg-slate-950">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20">
+      <section className="relative w-full overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white border-b border-gray-200">
         {/* Background Effects */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 right-0 w-150 h-150 bg-purple-500/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
@@ -27,20 +27,20 @@ export default async function BlogsPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 mb-8">
-            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-orange-50 border border-orange-200 mb-8">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <span className="text-xs font-bold text-primary uppercase tracking-wider">
               Our Blog
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">
             Insights &{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-purple-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-orange-500 to-purple-600">
               Engineering
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed">
             Deep dives into enterprise architecture, AI integration, and
             scalable web development.
           </p>
@@ -57,14 +57,14 @@ export default async function BlogsPage() {
       )}
 
       {/* Main Content Section */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Blog Grid - 3 columns on large screens */}
             <div className="lg:w-2/3">
               <div className="flex items-center gap-3 mb-10">
-                <TrendingUp className="w-5 h-5 text-orange-500" />
-                <h2 className="text-xl font-bold text-white">
+                <TrendingUp className="w-5 h-5 text-primary" />
+                <h2 className="text-xl font-bold text-slate-900">
                   Latest Insights
                 </h2>
               </div>
@@ -88,25 +88,25 @@ export default async function BlogsPage() {
             <aside className="lg:w-1/3">
               <div className="lg:sticky lg:top-24 space-y-8">
                 {/* Newsletter */}
-                <div className="bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl p-8 border border-slate-800 relative overflow-hidden">
+                <div className="bg-linear-to-br from-white to-gray-50 rounded-2xl p-8 border border-gray-200 relative overflow-hidden shadow-sm">
                   <div className="absolute top-0 right-0 p-6 opacity-10">
-                    <Mail className="w-20 h-20 text-white" />
+                    <Mail className="w-20 h-20 text-slate-900" />
                   </div>
                   <div className="relative z-10">
-                    <h4 className="text-xl font-bold text-white mb-2">
+                    <h4 className="text-xl font-bold text-slate-900 mb-2">
                       Weekly Tech Brief
                     </h4>
-                    <p className="text-slate-400 text-sm mb-6">
+                    <p className="text-slate-600 text-sm mb-6">
                       Get our best engineering and growth insights delivered
                       every Tuesday.
                     </p>
                     <div className="flex flex-col gap-3">
                       <input
-                        className="bg-slate-800 border border-slate-700 text-white placeholder:text-slate-500 rounded-lg text-sm px-4 py-3 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
+                        className="bg-white border border-gray-300 text-slate-900 placeholder:text-slate-500 rounded-lg text-sm px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="work@email.com"
                         type="email"
                       />
-                      <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm py-3 rounded-lg transition-colors shadow-lg shadow-orange-500/20">
+                      <button className="bg-primary hover:bg-red-700 text-white font-bold text-sm py-3 rounded-lg transition-colors shadow-lg">
                         Subscribe Free
                       </button>
                     </div>
@@ -117,8 +117,8 @@ export default async function BlogsPage() {
                 </div>
 
                 {/* Categories */}
-                <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800">
-                  <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 pb-3 border-b border-slate-800">
+                <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                  <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 pb-3 border-b border-gray-200">
                     Categories
                   </h4>
                   <div className="flex flex-wrap gap-2">
@@ -130,7 +130,7 @@ export default async function BlogsPage() {
                     ].map((category) => (
                       <span
                         key={category}
-                        className="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-400 hover:bg-orange-500/10 hover:text-orange-400 text-xs font-bold transition-colors border border-slate-700 hover:border-orange-500/30 cursor-pointer"
+                        className="px-3 py-1.5 rounded-lg bg-gray-100 text-slate-600 hover:bg-primary hover:text-white text-xs font-bold transition-colors border border-gray-200 hover:border-primary cursor-pointer"
                       >
                         {category}
                       </span>
@@ -158,7 +158,7 @@ function formatDate(dateString: string): string {
 function FeaturedPost({ post }: { post: BlogPost }) {
   return (
     <Link href={`/blogs/${post.slug}`} className="group block">
-      <article className="relative bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden hover:border-slate-700 transition-all duration-300">
+      <article className="relative bg-white rounded-3xl border border-gray-200 overflow-hidden hover:border-gray-300 hover:shadow-lg transition-all duration-300">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
           <div className="relative h-64 lg:h-100 overflow-hidden">
@@ -170,17 +170,17 @@ function FeaturedPost({ post }: { post: BlogPost }) {
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                <span className="text-6xl font-black text-slate-700">
+              <div className="w-full h-full bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                <span className="text-6xl font-black text-gray-300">
                   {post.title.charAt(0)}
                 </span>
               </div>
             )}
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-linear-to-t from-slate-900/50 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-white/20 to-transparent" />
             {/* Featured Badge */}
             <div className="absolute top-4 left-4">
-              <span className="bg-orange-500 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+              <span className="bg-primary text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg">
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
                 Featured
               </span>
@@ -190,7 +190,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
           {/* Content */}
           <div className="p-8 lg:p-12 flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-6">
-              <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-bold uppercase tracking-wider border border-purple-500/20">
+              <span className="px-3 py-1 rounded-sm bg-purple-50 text-purple-700 text-xs font-bold uppercase tracking-wider border border-purple-200">
                 Insights
               </span>
               <span className="text-slate-500 text-xs font-medium">
@@ -198,25 +198,27 @@ function FeaturedPost({ post }: { post: BlogPost }) {
               </span>
             </div>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight group-hover:text-orange-400 transition-colors">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 leading-tight group-hover:text-primary transition-colors">
               {post.title}
             </h2>
 
-            <p className="text-slate-400 mb-8 text-lg leading-relaxed line-clamp-3">
+            <p className="text-slate-600 mb-8 text-lg leading-relaxed line-clamp-3">
               {post.excerpt}
             </p>
 
-            <div className="mt-auto flex items-center justify-between border-t border-slate-800 pt-6">
+            <div className="mt-auto flex items-center justify-between border-t border-gray-200 pt-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-sm font-bold text-slate-400 ring-2 ring-slate-700">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-orange-600 flex items-center justify-center text-sm font-bold text-white ring-2 ring-gray-200">
                   {post.author.charAt(0)}
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white">{post.author}</p>
+                  <p className="text-sm font-bold text-slate-900">
+                    {post.author}
+                  </p>
                   <p className="text-xs text-slate-500">Author</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 text-slate-400 group-hover:bg-orange-500 group-hover:text-white transition-all">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 text-slate-600 group-hover:bg-primary group-hover:text-white transition-all">
                 <ArrowRight className="w-4 h-4" />
               </div>
             </div>
@@ -230,7 +232,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
 function PostCard({ post }: { post: BlogPost }) {
   return (
     <Link href={`/blogs/${post.slug}`} className="group block h-full">
-      <article className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden hover:border-slate-700 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+      <article className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-gray-300 hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col h-full shadow-sm">
         {/* Image */}
         <div className="relative h-40 overflow-hidden">
           {post.mainImage ? (
@@ -241,15 +243,15 @@ function PostCard({ post }: { post: BlogPost }) {
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
           ) : (
-            <div className="w-full h-full bg-linear-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-              <span className="text-3xl font-black text-slate-700">
+            <div className="w-full h-full bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <span className="text-3xl font-black text-gray-300">
                 {post.title.charAt(0)}
               </span>
             </div>
           )}
           {/* Category Badge */}
           <div className="absolute top-3 left-3">
-            <span className="px-2 py-1 rounded-md bg-slate-900/80 backdrop-blur text-xs font-bold text-purple-400 border border-purple-500/20">
+            <span className="px-2 py-1 rounded-md bg-white/90 backdrop-blur text-xs font-bold text-purple-700 border border-purple-200">
               Insights
             </span>
           </div>
@@ -261,19 +263,19 @@ function PostCard({ post }: { post: BlogPost }) {
             {formatDate(post.publishedAt)}
           </span>
 
-          <h3 className="text-lg font-bold text-white mb-3 group-hover:text-orange-400 transition-colors line-clamp-2">
+          <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors line-clamp-2">
             {post.title}
           </h3>
 
-          <p className="text-slate-400 text-sm leading-relaxed mb-4 line-clamp-2 flex-1">
+          <p className="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2 flex-1">
             {post.excerpt}
           </p>
 
-          <div className="pt-4 border-t border-slate-800 flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-slate-400">
+          <div className="pt-4 border-t border-gray-200 flex items-center gap-2">
+            <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-orange-600 flex items-center justify-center text-xs font-bold text-white">
               {post.author.charAt(0)}
             </div>
-            <span className="text-xs font-medium text-slate-400">
+            <span className="text-xs font-medium text-slate-600">
               {post.author}
             </span>
           </div>
