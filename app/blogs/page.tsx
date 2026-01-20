@@ -49,7 +49,7 @@ export default async function BlogsPage() {
 
       {/* Featured Article */}
       {featured && (
-        <section className="pb-16">
+        <section className="pt-12 pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FeaturedPost post={featured} />
           </div>
@@ -208,7 +208,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
 
             <div className="mt-auto flex items-center justify-between border-t border-gray-200 pt-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-orange-600 flex items-center justify-center text-sm font-bold text-white ring-2 ring-gray-200">
+                <div className="w-10 h-10 rounded-full bg-linear-to-br from-primary to-orange-600 flex items-center justify-center text-sm font-bold text-white ring-2 ring-gray-200">
                   {post.author.charAt(0)}
                 </div>
                 <div>
@@ -272,7 +272,7 @@ function PostCard({ post }: { post: BlogPost }) {
           </p>
 
           <div className="pt-4 border-t border-gray-200 flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-orange-600 flex items-center justify-center text-xs font-bold text-white">
+            <div className="w-6 h-6 rounded-full bg-linear-to-br from-primary to-orange-600 flex items-center justify-center text-xs font-bold text-white">
               {post.author.charAt(0)}
             </div>
             <span className="text-xs font-medium text-slate-600">

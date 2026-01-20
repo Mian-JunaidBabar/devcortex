@@ -142,7 +142,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* Featured Image */}
       {post.mainImage && (
-        <section className="pb-16">
+        <section className="pt-12 pb-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
               <Image
