@@ -264,7 +264,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Step 1 */}
-              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:bg-slate-900 hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
+              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Stethoscope className="w-7 h-7" />
                 </div>
@@ -277,7 +277,7 @@ export default function AboutPage() {
               </div>
 
               {/* Step 2 */}
-              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:bg-slate-900 hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
+              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Boxes className="w-7 h-7" />
                 </div>
@@ -290,28 +290,28 @@ export default function AboutPage() {
               </div>
 
               {/* Step 3 */}
-              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:bg-slate-900 hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
+              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Hammer className="w-7 h-7" />
                 </div>
-<h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
+<h3 className="text-lg font-bold text-slate-900 mb-2">
   3. Construction
 </h3>
-<p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
+<p className="text-slate-500 text-sm leading-relaxed  ">
   Agile development sprints with regular updates. Code meets
   design.
 </p>
               </div>
 
               {/* Step 4 - Ignition (now consistent with others) */}
-              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group transform md:-translate-y-2 hover:bg-slate-900 hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
+              <div className="relative z-10 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 group hover:border-slate-800 hover:shadow-xl hover:shadow-slate-900/20">
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Rocket className="w-7 h-7" />
                 </div>
-<h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
+<h3 className="text-lg font-bold text-slate-900 mb-2 ">
   4. Ignition
 </h3>
-<p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
+<p className="text-slate-500 text-sm leading-relaxed  ">
   Launch, monitor, and optimize. Marketing campaigns go live to
   drive traffic.
 </p>
