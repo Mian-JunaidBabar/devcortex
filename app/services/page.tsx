@@ -19,8 +19,8 @@ export default function ServicesPage() {
       <section className="relative w-full overflow-hidden bg-slate-50 pt-24 pb-24 lg:pt-32 lg:pb-32 border-b border-slate-100">
         <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none mix-blend-multiply"></div>
         {/* Background Gradients */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 mb-8 shadow-sm">
@@ -31,7 +31,7 @@ export default function ServicesPage() {
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight text-slate-900">
             Engineering Meets <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-red-600">
               Modern Marketing
             </span>
           </h1>
@@ -173,7 +173,6 @@ export default function ServicesPage() {
             <div className="w-24 h-1.5 bg-blue-600 rounded-full"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            
             {/* Tech Stack */}
             <div className="flex flex-col gap-6">
               <div className="size-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center text-blue-600 mb-2">
@@ -185,8 +184,9 @@ export default function ServicesPage() {
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
                   We specialize in <strong>Custom Development</strong> using
-                  Next.js for web and <strong>Flutter</strong> for cross-platform
-                  mobile apps. We also offer high-speed WordPress builds.
+                  Next.js for web and <strong>Flutter</strong> for
+                  cross-platform mobile apps. We also offer high-speed WordPress
+                  builds.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-auto">
@@ -241,7 +241,8 @@ export default function ServicesPage() {
                   AI & Automation
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
-                  Future-proof your business. We implement <strong>AI Chatbots</strong> 
+                  Future-proof your business. We implement{" "}
+                  <strong>AI Chatbots</strong>
                   to handle support tickets and automate repetitive workflows
                   using Zapier and Python.
                 </p>
@@ -276,7 +277,6 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            
             {/* Package 1: Starter (Local/Small Biz) */}
             <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-slate-200 flex flex-col h-full hover:shadow-xl hover:border-slate-300 transition-all duration-300">
               <div className="mb-6">
@@ -285,12 +285,11 @@ export default function ServicesPage() {
                 </span>
                 <h3 className="text-4xl font-bold text-slate-900 mb-2">
                   $2,500
-                  <span className="text-lg text-slate-400 font-normal">
-                    +
-                  </span>
+                  <span className="text-lg text-slate-400 font-normal">+</span>
                 </h3>
                 <p className="text-slate-500 text-sm">
-                  Perfect for local businesses needing a fast, professional launch.
+                  Perfect for local businesses needing a fast, professional
+                  launch.
                 </p>
               </div>
               <div className="w-full h-px bg-slate-100 mb-8"></div>
@@ -318,19 +317,17 @@ export default function ServicesPage() {
             </div>
 
             {/* Package 2: Growth (The Upsell) */}
-            <div className="bg-gradient-to-b from-slate-900 to-slate-800 rounded-[2rem] p-8 shadow-2xl shadow-blue-600/20 border border-slate-700 relative flex flex-col h-full transform md:-translate-y-4">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-600 to-red-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
+            <div className="bg-linear-to-b from-slate-900 to-slate-800 rounded-[2rem] p-8 shadow-2xl shadow-blue-600/20 border border-slate-700 relative flex flex-col h-full transform md:-translate-y-4">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-linear-to-r from-blue-600 to-red-600 text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
                 Most Popular
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 to-transparent rounded-[2rem] pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-blue-600/10 to-transparent rounded-[2rem] pointer-events-none"></div>
 
               <div className="mb-6 relative z-10">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-slate-800 text-white text-xs font-extrabold uppercase tracking-wide mb-4 ring-1 ring-white/10">
                   Growth System
                 </span>
-                <h3 className="text-4xl font-bold text-white mb-2">
-                  Custom
-                </h3>
+                <h3 className="text-4xl font-bold text-white mb-2">Custom</h3>
                 <p className="text-slate-300 text-sm">
                   Complete architecture for scaling startups and SMBs.
                 </p>

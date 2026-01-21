@@ -22,7 +22,7 @@ export default function NotFound() {
           <div className="text-center">
             {/* 404 Visual */}
             <div className="mb-12 relative">
-              <div className="text-9xl md:text-[180px] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-primary to-orange-500 leading-none tracking-tighter">
+              <div className="text-9xl md:text-[180px] font-black text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-primary to-orange-500 leading-none tracking-tighter">
                 404
               </div>
               <div className="absolute inset-0 text-9xl md:text-[180px] font-black text-slate-900/5 blur-lg leading-none tracking-tighter">

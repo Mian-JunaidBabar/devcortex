@@ -374,7 +374,7 @@ export default function ProjectTechnicalPage({
                   <ul className="space-y-4">
                     {project.solutionPoints.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                         <span className="text-slate-600">{point}</span>
                       </li>
                     ))}
