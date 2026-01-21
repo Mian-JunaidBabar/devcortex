@@ -18,8 +18,8 @@ export default function AboutPage() {
       <section className="relative w-full overflow-hidden bg-white pt-24 pb-32">
         <div className="absolute inset-0 tech-noise opacity-[0.03] pointer-events-none"></div>
         {/* Blobs */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50/80 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-50/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-50/80 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-50/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-8">
@@ -32,13 +32,17 @@ export default function AboutPage() {
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-slate-900">
             Solid - Engineering
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-red-600">
               Explosive Growth
             </span>
           </h1>
 
           <p className="text-xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-            We are the intersection where <strong className="text-slate-700">Silicon Valley tech</strong> meets <strong className="text-slate-700">Madison Avenue strategy</strong>. We build digital engines that pay for themselves.
+            We are the intersection where{" "}
+            <strong className="text-slate-700">Silicon Valley tech</strong>{" "}
+            meets{" "}
+            <strong className="text-slate-700">Madison Avenue strategy</strong>.
+            We build digital engines that pay for themselves.
           </p>
         </div>
       </section>
@@ -47,10 +51,9 @@ export default function AboutPage() {
       <section className="py-24 bg-slate-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-stretch">
-            
             {/* BUILD Card (The Architect - Blue) */}
             <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-linear-to-b from-blue-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full bg-white rounded-[2rem] border border-slate-200 p-8 lg:p-12 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
                 <div className="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
 
@@ -71,7 +74,9 @@ export default function AboutPage() {
                 <div className="w-full h-px bg-slate-100 mb-8"></div>
 
                 <p className="text-slate-600 leading-relaxed mb-8 italic">
-                  "Your website or app isn't just a brochure; it's a business asset. I ensure it loads fast, never breaks, and scales effortlessly when the ads start running."
+                  "Your website or app isn't just a brochure; it's a business
+                  asset. I ensure it loads fast, never breaks, and scales
+                  effortlessly when the ads start running."
                 </p>
 
                 <div className="mt-auto grid grid-cols-3 gap-2 w-full text-center">
@@ -105,7 +110,7 @@ export default function AboutPage() {
 
             {/* GROW Card (The Strategist - Red) */}
             <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-b from-red-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-linear-to-b from-red-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full bg-white rounded-[2rem] border border-slate-200 p-8 lg:p-12 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
                 <div className="absolute top-0 left-0 w-full h-2 bg-red-600"></div>
 
@@ -126,7 +131,9 @@ export default function AboutPage() {
                 <div className="w-full h-px bg-slate-100 mb-8"></div>
 
                 <p className="text-slate-600 leading-relaxed mb-8 italic">
-                  "A beautiful product that no one sees is a failure. My job is to flood your new digital engine with qualified traffic through SEO and paid campaigns."
+                  "A beautiful product that no one sees is a failure. My job is
+                  to flood your new digital engine with qualified traffic
+                  through SEO and paid campaigns."
                 </p>
 
                 <div className="mt-auto grid grid-cols-3 gap-2 w-full text-center">
@@ -171,9 +178,9 @@ export default function AboutPage() {
                 Our Philosophy
               </div>
 
-<h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-  Stop juggling freelancers.
-</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                Stop juggling freelancers.
+              </h2>
 
               <p className="text-lg text-slate-600 mb-6">
                 Most businesses have a "web guy" and a "marketing guy," and they
@@ -181,9 +188,10 @@ export default function AboutPage() {
               </p>
 
               <p className="text-slate-500 leading-relaxed mb-8">
-                At DeepDev, we unify the process. We build the site 
-                <span className="italic"> knowing </span> it needs to rank for SEO. 
-                We build the app <span className="italic"> knowing </span> it needs to convert ad traffic.
+                At DeepDev, we unify the process. We build the site
+                <span className="italic"> knowing </span> it needs to rank for
+                SEO. We build the app <span className="italic"> knowing </span>{" "}
+                it needs to convert ad traffic.
               </p>
 
               <ul className="space-y-4">
@@ -268,12 +276,13 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Stethoscope className="w-7 h-7" />
                 </div>
-<h3 className="text-lg font-bold text-slate-900 mb-2">
-  1. Discovery
-</h3>
-<p className="text-slate-500 text-sm leading-relaxed">
-  We analyze your business goals, target audience, and current bottlenecks.
-</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  1. Discovery
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  We analyze your business goals, target audience, and current
+                  bottlenecks.
+                </p>
               </div>
 
               {/* Step 2 */}
@@ -281,12 +290,13 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Boxes className="w-7 h-7" />
                 </div>
-<h3 className="text-lg font-bold text-slate-900 mb-2">
-  2. Architecture
-</h3>
-<p className="text-slate-500 text-sm leading-relaxed">
-  We design the technical stack (Web/App) and the marketing funnel strategy.
-</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  2. Architecture
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  We design the technical stack (Web/App) and the marketing
+                  funnel strategy.
+                </p>
               </div>
 
               {/* Step 3 */}
@@ -294,13 +304,13 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Hammer className="w-7 h-7" />
                 </div>
-<h3 className="text-lg font-bold text-slate-900 mb-2">
-  3. Construction
-</h3>
-<p className="text-slate-500 text-sm leading-relaxed  ">
-  Agile development sprints with regular updates. Code meets
-  design.
-</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  3. Construction
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed  ">
+                  Agile development sprints with regular updates. Code meets
+                  design.
+                </p>
               </div>
 
               {/* Step 4 - Ignition (now consistent with others) */}
@@ -308,13 +318,13 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Rocket className="w-7 h-7" />
                 </div>
-<h3 className="text-lg font-bold text-slate-900 mb-2 ">
-  4. Ignition
-</h3>
-<p className="text-slate-500 text-sm leading-relaxed  ">
-  Launch, monitor, and optimize. Marketing campaigns go live to
-  drive traffic.
-</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 ">
+                  4. Ignition
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed  ">
+                  Launch, monitor, and optimize. Marketing campaigns go live to
+                  drive traffic.
+                </p>
               </div>
             </div>
           </div>
@@ -324,8 +334,8 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-24 bg-white text-slate-900 overflow-hidden relative border-t border-slate-100">
         <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-100/50 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-125 h-125 bg-blue-100/50 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-125 h-125 bg-red-100/50 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tight text-slate-900">
@@ -333,7 +343,8 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto">
-            Whether you need a new website, a custom app, or more leads from Google & Meta—we have the team to make it happen.
+            Whether you need a new website, a custom app, or more leads from
+            Google & Meta—we have the team to make it happen.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

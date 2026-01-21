@@ -1,5 +1,5 @@
-import { getPosts, type BlogPost } from "@/services/blog.service";
 import { Mail, TrendingUp, ArrowRight, BookOpen } from "lucide-react";
+import { getPosts, type BlogPost } from "@/services/blog.service";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,8 +21,8 @@ export default async function BlogsPage() {
       <section className="relative w-full overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white border-b border-slate-100">
         {/* Background Effects */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
+          <div className="absolute top-0 right-0 w-150 h-150 bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -36,7 +36,7 @@ export default async function BlogsPage() {
 
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight">
             Knowledge for <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-red-600">
               Digital Leaders
             </span>
           </h1>
@@ -97,8 +97,8 @@ export default async function BlogsPage() {
                       Weekly Intel
                     </h4>
                     <p className="text-slate-500 text-sm mb-6 leading-relaxed">
-                      Get our best engineering tactics and growth hacks delivered
-                      every Tuesday.
+                      Get our best engineering tactics and growth hacks
+                      delivered every Tuesday.
                     </p>
                     <div className="flex flex-col gap-3">
                       <input
@@ -163,7 +163,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
       <article className="relative bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden hover:border-slate-300 hover:shadow-xl transition-all duration-300">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative h-64 lg:h-[28rem] overflow-hidden">
+          <div className="relative h-64 lg:h-112 overflow-hidden">
             {post.mainImage ? (
               <Image
                 alt={post.title}
@@ -179,8 +179,8 @@ function FeaturedPost({ post }: { post: BlogPost }) {
               </div>
             )}
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-900/10" />
-            
+            <div className="absolute inset-0 bg-linear-to-t from-slate-900/50 to-transparent lg:bg-linear-to-r lg:from-transparent lg:to-slate-900/10" />
+
             {/* Featured Badge */}
             <div className="absolute top-6 left-6">
               <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg backdrop-blur-md">
@@ -192,8 +192,8 @@ function FeaturedPost({ post }: { post: BlogPost }) {
 
           {/* Content */}
           <div className="p-8 lg:p-12 flex flex-col justify-center bg-white relative">
-             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-red-600 lg:hidden"></div>
-             <div className="hidden lg:block absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-600 to-red-600"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-blue-600 to-red-600 lg:hidden"></div>
+            <div className="hidden lg:block absolute top-0 left-0 w-1 h-full bg-linear-to-b from-blue-600 to-red-600"></div>
 
             <div className="flex items-center gap-3 mb-6">
               <span className="px-3 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider border border-blue-100">

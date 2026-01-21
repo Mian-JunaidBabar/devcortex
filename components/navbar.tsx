@@ -23,37 +23,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* LOGO SECTION */}
           <Link href="/" className="flex items-center gap-3 group">
-            {/* Brain Icon (Blue/Red Split) */}
-            <svg
-              viewBox="0 0 100 115"
-              className="w-8 h-8 transition-transform group-hover:scale-105"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M50 5 L93.3 30 V80 L50 105 L6.7 80 V30 L50 5Z"
-                stroke="#0F172A"
-                strokeWidth="5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              {/* Left Brain (Blue) */}
-              <g stroke="#2563EB" strokeWidth="5" strokeLinecap="round">
-                <path d="M46 25 C 20 25, 15 50, 20 80" />
-                <path d="M46 45 L 35 45" />
-                <path d="M46 65 L 30 65" />
-                <path d="M46 25 V 85" />
-              </g>
-              {/* Right Brain (Red) */}
-              <g stroke="#DC2626" strokeWidth="5" strokeLinecap="round">
-                <path d="M54 25 C 80 25, 85 50, 80 80" />
-                <path d="M54 45 L 65 45" />
-                <path d="M54 65 L 70 65" />
-                <path d="M54 25 V 85" />
-              </g>
-            </svg>
+            <img
+              src="/logo.svg"
+              alt="Deep Dev Solutions logo"
+              className="w-8 h-8 object-contain transition-transform group-hover:scale-105"
+            />
             <h2 className="text-xl font-bold tracking-tight text-slate-900">
-              DevCortex
+              Deep Dev Solutions
             </h2>
           </Link>
 
