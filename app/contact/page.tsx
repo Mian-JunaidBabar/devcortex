@@ -16,7 +16,7 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { id, type, value } = e.target;
     setFormData((prev) => ({
@@ -62,12 +62,17 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-lg">Email Us</h3>
+                    <h3 className="font-bold text-slate-900 text-lg">
+                      Email Us
+                    </h3>
                     <p className="text-slate-500 mb-1">
                       For general inquiries and project proposals.
                     </p>
-                    <a className="text-slate-900 font-medium hover:text-red-600 transition-colors" href="mailto:hello@devcortex.com">
-                      hello@devcortex.com
+                    <a
+                      className="text-slate-900 font-medium hover:text-red-600 transition-colors"
+                      href="mailto:hello@deepdevsolutions.com"
+                    >
+                      hello@deepdevsolutions.com
                     </a>
                   </div>
                 </div>
@@ -76,9 +81,15 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-lg">Visit HQ</h3>
-                    <p className="text-slate-500 mb-1">Lahore, Pakistan &amp; Remote Global.</p>
-                    <p className="text-slate-900 font-medium">Model Town, Block C, 54700</p>
+                    <h3 className="font-bold text-slate-900 text-lg">
+                      Visit HQ
+                    </h3>
+                    <p className="text-slate-500 mb-1">
+                      Lahore, Pakistan &amp; Remote Global.
+                    </p>
+                    <p className="text-slate-900 font-medium">
+                      Model Town, Block C, 54700
+                    </p>
                   </div>
                 </div>
               </div>

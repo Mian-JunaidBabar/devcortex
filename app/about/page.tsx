@@ -180,7 +180,7 @@ export default function AboutPage() {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                The DevCortex Way
+                The Deep Dev Solutions Way
               </h2>
 
               <p className="text-lg text-slate-600 mb-6">

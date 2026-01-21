@@ -109,7 +109,7 @@ const projects: Record<string, CaseStudyDetail> = {
     ],
     testimonial: {
       quote:
-        "DevCortex transformed our MVP into a robust, enterprise-ready platform. The speed of execution and attention to performance detail was unmatched.",
+        "Deep Dev Solutions transformed our MVP into a robust, enterprise-ready platform. The speed of execution and attention to performance detail was unmatched.",
       author: "Sarah Jenkins",
       role: "CTO, OmniBlox",
       avatar: "SJ",
@@ -153,7 +153,7 @@ export default function ProjectTechnicalPage({
                 🔷
               </div>
               <h2 className="text-xl font-bold tracking-tight text-slate-900">
-                DevCortex
+                Deep Dev Solutions
               </h2>
             </Link>
             <nav className="hidden md:flex items-center gap-8">
@@ -434,8 +434,8 @@ export default function ProjectTechnicalPage({
                           item.color === "orange"
                             ? "text-orange-500"
                             : item.color === "blue"
-                            ? "text-blue-600"
-                            : "text-primary"
+                              ? "text-blue-600"
+                              : "text-primary"
                         }`}
                       >
                         {item.metric}
@@ -542,7 +542,7 @@ export default function ProjectTechnicalPage({
                   🔷
                 </div>
                 <span className="text-xl font-bold tracking-tight text-slate-900">
-                  DevCortex
+                  Deep Dev Solutions
                 </span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed">
@@ -644,7 +644,7 @@ export default function ProjectTechnicalPage({
           </div>
           <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-400">
-              © 2024 DevCortex Agency. All rights reserved.
+              © 2024 Deep Dev Solutions. All rights reserved.
             </p>
             <div className="flex gap-8 text-sm text-slate-400">
               <a className="hover:text-slate-600" href="#">

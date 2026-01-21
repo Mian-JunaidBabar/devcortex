@@ -53,7 +53,7 @@ export const Navbar = () => {
               </g>
             </svg>
             <h2 className="text-xl font-bold tracking-tight text-slate-900">
-              DevCortex
+              Deep Dev Solutions
             </h2>
           </Link>
 

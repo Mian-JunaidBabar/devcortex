@@ -13,7 +13,7 @@ export const Footer = () => {
                 <CircuitBoard className="w-7 h-7" />
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900">
-                DevCortex
+                Deep Dev Solutions
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
@@ -153,7 +153,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-400">
-            © 2026 DevCortex Agency. All rights reserved.
+            © 2026 Deep Dev Solutions. All rights reserved.
           </p>
           <div className="flex gap-8 text-sm text-slate-400">
             <Link className="hover:text-slate-600" href="#">

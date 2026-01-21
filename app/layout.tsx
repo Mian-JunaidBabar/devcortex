@@ -12,7 +12,7 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DevCortex - Digital Agency",
+  title: "Deep Dev Solutions - Digital Agency",
   description:
     "A hybrid digital agency bridging the gap between rapid deployment and enterprise-grade engineering.",
 };

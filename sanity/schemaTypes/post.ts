@@ -31,7 +31,7 @@ export default defineType({
       name: "author",
       title: "Author",
       type: "string",
-      initialValue: "DevCortex Team",
+      initialValue: "Deep Dev Solutions Team",
     }),
     defineField({
       name: "mainImage",
