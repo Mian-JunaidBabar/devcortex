@@ -171,13 +171,9 @@ export default function AboutPage() {
                 Our Philosophy
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-<<<<<<< HEAD
-                Stop juggling freelancers.
-=======
-                The Deep Dev Solutions Way
->>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
-              </h2>
+<h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+  Stop juggling freelancers.
+</h2>
 
               <p className="text-lg text-slate-600 mb-6">
                 Most businesses have a "web guy" and a "marketing guy," and they
@@ -272,21 +268,12 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Stethoscope className="w-7 h-7" />
                 </div>
-<<<<<<< HEAD
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  1. Discovery
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed">
-                  We analyze your business goals, target audience, and current bottlenecks.
-=======
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
-                  1. Diagnosis
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
-                  We audit your current tech stack and market position to
-                  identify inefficiencies.
->>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
-                </p>
+<h3 className="text-lg font-bold text-slate-900 mb-2">
+  1. Discovery
+</h3>
+<p className="text-slate-500 text-sm leading-relaxed">
+  We analyze your business goals, target audience, and current bottlenecks.
+</p>
               </div>
 
               {/* Step 2 */}
@@ -294,21 +281,12 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Boxes className="w-7 h-7" />
                 </div>
-<<<<<<< HEAD
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  2. Architecture
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed">
-                  We design the technical stack (Web/App) and the marketing funnel strategy.
-=======
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
-                  2. Blueprint
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
-                  Mapping out the architecture, selecting the right tools (CMS
-                  vs Custom), and strategy.
->>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
-                </p>
+<h3 className="text-lg font-bold text-slate-900 mb-2">
+  2. Architecture
+</h3>
+<p className="text-slate-500 text-sm leading-relaxed">
+  We design the technical stack (Web/App) and the marketing funnel strategy.
+</p>
               </div>
 
               {/* Step 3 */}
@@ -316,18 +294,13 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Hammer className="w-7 h-7" />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
-                  3. Construction
-                </h3>
-<<<<<<< HEAD
-                <p className="text-slate-500 text-sm leading-relaxed">
-                  Our engineers build the product while our marketers prep the ad campaigns.
-=======
-                <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
-                  Agile development sprints with regular updates. Code meets
-                  design.
->>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
-                </p>
+<h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
+  3. Construction
+</h3>
+<p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
+  Agile development sprints with regular updates. Code meets
+  design.
+</p>
               </div>
 
               {/* Step 4 - Ignition (now consistent with others) */}
@@ -335,21 +308,13 @@ export default function AboutPage() {
                 <div className="w-14 h-14 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-xl font-bold shadow-sm group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-colors">
                   <Rocket className="w-7 h-7" />
                 </div>
-<<<<<<< HEAD
-                <h3 className="text-lg font-bold text-white mb-2">
-                  4. Ignition & Scale
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  We launch the product and turn on the traffic. Then we optimize for profit.
-=======
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
-                  4. Ignition
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
-                  Launch, monitor, and optimize. Marketing campaigns go live to
-                  drive traffic.
->>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
-                </p>
+<h3 className="text-lg font-bold text-slate-900 group-hover:text-white mb-2 transition-colors">
+  4. Ignition
+</h3>
+<p className="text-slate-500 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
+  Launch, monitor, and optimize. Marketing campaigns go live to
+  drive traffic.
+</p>
               </div>
             </div>
           </div>
