@@ -178,7 +178,7 @@ export default function NotFound() {
                   🔷
                 </div>
                 <span className="text-xl font-bold tracking-tight text-slate-900">
-                  DevCortex
+                  Deep Dev Solutions
                 </span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed">
@@ -307,7 +307,7 @@ export default function NotFound() {
           </div>
           <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-slate-400">
-              © 2024 DevCortex Agency. All rights reserved.
+              © 2024 Deep Dev Solutions. All rights reserved.
             </p>
             <div className="flex gap-8 text-sm text-slate-400">
               <a className="hover:text-slate-600" href="#">

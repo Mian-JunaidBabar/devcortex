@@ -16,7 +16,7 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { id, type, value } = e.target;
     setFormData((prev) => ({
@@ -62,12 +62,22 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-lg">Email Us</h3>
+                    <h3 className="font-bold text-slate-900 text-lg">
+                      Email Us
+                    </h3>
                     <p className="text-slate-500 mb-1">
                       For project proposals and inquiries.
                     </p>
+<<<<<<< HEAD
                     <a className="text-slate-900 font-medium hover:text-red-600 transition-colors" href="mailto:hello@deepdev.com">
                       hello@deepdev.com
+=======
+                    <a
+                      className="text-slate-900 font-medium hover:text-red-600 transition-colors"
+                      href="mailto:hello@deepdevsolutions.com"
+                    >
+                      hello@deepdevsolutions.com
+>>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
                     </a>
                   </div>
                 </div>
@@ -77,9 +87,21 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
+<<<<<<< HEAD
                     <h3 className="font-bold text-slate-900 text-lg">Global HQ</h3>
                     <p className="text-slate-500 mb-1">Lahore, Pakistan &amp; Remote.</p>
                     <p className="text-slate-900 font-medium">Model Town, Block C, 54700</p>
+=======
+                    <h3 className="font-bold text-slate-900 text-lg">
+                      Visit HQ
+                    </h3>
+                    <p className="text-slate-500 mb-1">
+                      Lahore, Pakistan &amp; Remote Global.
+                    </p>
+                    <p className="text-slate-900 font-medium">
+                      Model Town, Block C, 54700
+                    </p>
+>>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
                   </div>
                 </div>
 

@@ -41,7 +41,11 @@ export const Footer = () => {
                 </g>
               </svg>
               <span className="text-xl font-bold tracking-tight text-slate-900">
+<<<<<<< HEAD
                 DeepDev
+=======
+                Deep Dev Solutions
+>>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
               </span>
             </Link>
             <p className="text-slate-500 text-sm leading-relaxed">
@@ -181,7 +185,11 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-400">
+<<<<<<< HEAD
             © {new Date().getFullYear()} DeepDev All rights reserved.
+=======
+            © 2026 Deep Dev Solutions. All rights reserved.
+>>>>>>> 8efb205d3696e8c858dd27ad60c87ae4918f22c0
           </p>
           <div className="flex gap-8 text-sm text-slate-400">
             <Link className="hover:text-slate-600 transition-colors" href="#">

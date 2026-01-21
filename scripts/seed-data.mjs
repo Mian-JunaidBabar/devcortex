@@ -1,5 +1,5 @@
 /**
- * Seed Script for DevCortex
+ * Seed Script for Deep Dev Solutions
  *
  * Usage:
  * 1. Add SANITY_API_WRITE_TOKEN to your .env.local
@@ -58,7 +58,7 @@ const projects = [
     status: "In Progress",
     tech: ["Next.js", "Nest.js", "PostgreSQL", "Redis"],
     resultMetric: "40% Churn Reduction",
-    repoUrl: "https://github.com/devcortex/omniblox",
+    repoUrl: "https://github.com/deepdevsolutions/omniblox",
     liveUrl: "https://omniblox.io",
   },
   {
@@ -71,7 +71,7 @@ const projects = [
     status: "In Progress",
     tech: ["Python", "TensorFlow", "WebSockets", "FastAPI"],
     resultMetric: "Automated Workflows",
-    repoUrl: "https://github.com/devcortex/harmoni-ai",
+    repoUrl: "https://github.com/deepdevsolutions/harmoni-ai",
     liveUrl: "https://harmoni.ai",
   },
   {
@@ -285,7 +285,7 @@ async function seedPosts() {
 // ============================================================
 
 async function main() {
-  console.log("\n🚀 DevCortex Seed Script\n");
+  console.log("\n🚀 Deep Dev Solutions Seed Script\n");
   console.log(`   Project: ${projectId}`);
   console.log(`   Dataset: ${dataset}\n`);
 

@@ -3,7 +3,7 @@ import { getProjects } from "@/services/project.service";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Our Work | DevCortex",
+  title: "Our Work | Deep Dev Solutions",
   description:
     "Explore our portfolio of high-performance digital products and case studies across SaaS, AI, and marketing.",
 };

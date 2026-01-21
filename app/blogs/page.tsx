@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog | DevCortex",
+  title: "Blog | Deep Dev Solutions",
   description:
     "Deep dives into enterprise architecture, AI integration, and scalable web development.",
 };

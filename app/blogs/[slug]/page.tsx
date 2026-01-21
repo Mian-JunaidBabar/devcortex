@@ -24,12 +24,13 @@ export async function generateMetadata({
   const post = await getPost(slug);
 
   if (!post) {
-    return { title: "Post Not Found | DevCortex" };
+    return { title: "Post Not Found | Deep Dev Solutions" };
   }
 
   return {
-    title: `${post.title} | DevCortex Blog`,
-    description: post.excerpt || `Read ${post.title} on the DevCortex blog`,
+    title: `${post.title} | Deep Dev Solutions Blog`,
+    description:
+      post.excerpt || `Read ${post.title} on the Deep Dev Solutions blog`,
   };
 }
 

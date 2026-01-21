@@ -24,11 +24,11 @@ export async function generateMetadata({
   const project = await getProject(slug);
 
   if (!project) {
-    return { title: "Project Not Found | DevCortex" };
+    return { title: "Project Not Found | Deep Dev Solutions" };
   }
 
   return {
-    title: `${project.title} | DevCortex Case Study`,
+    title: `${project.title} | Deep Dev Solutions Case Study`,
     description: project.tagline || `Case study for ${project.title}`,
   };
 }
