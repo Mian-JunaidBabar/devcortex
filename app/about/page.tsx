@@ -3,56 +3,54 @@
 import Link from "next/link";
 import {
   Code,
-  Zap,
+  TrendingUp,
   CheckCircle2,
   Stethoscope,
   Boxes,
   Hammer,
   Rocket,
-  TrendingUp,
 } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <>
+    <main>
       {/* Hero Section */}
-      <div className="relative w-full overflow-hidden bg-white pt-24 pb-32">
+      <section className="relative w-full overflow-hidden bg-white pt-24 pb-32">
         <div className="absolute inset-0 tech-noise opacity-[0.03] pointer-events-none"></div>
-        {/* Updated Blobs to Blue & Red */}
-        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-50/80 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-50/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        {/* Blobs */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50/80 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-50/80 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-8">
             <span className="w-2 h-2 rounded-full bg-blue-600"></span>
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-              The Story
+              Our DNA
             </span>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-slate-900">
-            Two Brains.
+            Solid - Engineering
             <br />
-            {/* Gradient updated to Blue -> Red */}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-red-600">
-              One Outcome.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-600">
+              Explosive Growth
             </span>
           </h1>
 
           <p className="text-xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-            We are a hybrid digital agency merging high-performance engineering
-            with ruthless business strategy for the global SMB market.
+            We are the intersection where <strong className="text-slate-700">Silicon Valley tech</strong> meets <strong className="text-slate-700">Madison Avenue strategy</strong>. We build digital engines that pay for themselves.
           </p>
         </div>
-      </div>
+      </section>
 
-      {/* Founders Section */}
-      <div className="py-24 bg-slate-50 relative">
+      {/* Founders Section (The Dual Brain) */}
+      <section className="py-24 bg-slate-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-stretch">
-            {/* CTO Card (BLUE - Tech) */}
+            
+            {/* BUILD Card (The Architect - Blue) */}
             <div className="group relative">
-              <div className="absolute -inset-1 bg-linear-to-b from-blue-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full bg-white rounded-[2rem] border border-slate-200 p-8 lg:p-12 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
                 <div className="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
 
@@ -61,89 +59,83 @@ export default function AboutPage() {
                 </div>
 
                 <h2 className="text-xs font-bold text-blue-600 tracking-widest uppercase mb-2">
-                  The Architect
+                  The Builder
                 </h2>
                 <h3 className="text-3xl font-bold text-slate-900 mb-1">
-                  Chief Technology Officer
+                  Head of Engineering
                 </h3>
                 <p className="text-slate-400 text-sm mb-8">
-                  System Design &amp; Scalability
+                  Architecture &amp; Development
                 </p>
 
                 <div className="w-full h-px bg-slate-100 mb-8"></div>
 
                 <p className="text-slate-600 leading-relaxed mb-8 italic">
-                  "Code without purpose is just poetry. We build systems that
-                  don't just function—they scale, adapt, and drive measurable
-                  efficiency."
+                  "Your website or app isn't just a brochure; it's a business asset. I ensure it loads fast, never breaks, and scales effortlessly when the ads start running."
                 </p>
 
-                {/* Improved Stats Styling */}
                 <div className="mt-auto grid grid-cols-3 gap-2 w-full text-center">
                   <div className="bg-blue-50 rounded-xl p-3 border border-blue-100">
                     <span className="block text-xl font-black text-blue-700">
-                      10+
+                      100%
                     </span>
                     <span className="text-[10px] font-bold text-blue-400 uppercase tracking-wide">
-                      Years Exp
+                      Uptime
                     </span>
                   </div>
                   <div className="bg-blue-50 rounded-xl p-3 border border-blue-100">
                     <span className="block text-xl font-black text-blue-700">
-                      Py
+                      Full
                     </span>
                     <span className="text-[10px] font-bold text-blue-400 uppercase tracking-wide">
-                      Core
+                      Stack
                     </span>
                   </div>
                   <div className="bg-blue-50 rounded-xl p-3 border border-blue-100">
                     <span className="block text-xl font-black text-blue-700">
-                      AWS
+                      Cloud
                     </span>
                     <span className="text-[10px] font-bold text-blue-400 uppercase tracking-wide">
-                      Certified
+                      Native
                     </span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* COO Card (RED - Strategy - Changed from Orange) */}
+            {/* GROW Card (The Strategist - Red) */}
             <div className="group relative">
-              <div className="absolute -inset-1 bg-linear-to-b from-red-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              <div className="absolute -inset-1 bg-gradient-to-b from-red-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full bg-white rounded-[2rem] border border-slate-200 p-8 lg:p-12 shadow-xl shadow-slate-200/50 overflow-hidden flex flex-col items-center text-center transition-transform hover:-translate-y-1 duration-300">
                 <div className="absolute top-0 left-0 w-full h-2 bg-red-600"></div>
 
                 <div className="w-24 h-24 rounded-full bg-red-50 flex items-center justify-center text-red-600 mb-6 border border-red-100 shadow-inner">
-                  {/* Changed Icon to TrendingUp to match Strategy/Growth */}
                   <TrendingUp className="w-10 h-10" />
                 </div>
 
                 <h2 className="text-xs font-bold text-red-600 tracking-widest uppercase mb-2">
-                  The Strategist
+                  The Marketer
                 </h2>
                 <h3 className="text-3xl font-bold text-slate-900 mb-1">
-                  Chief Operating Officer
+                  Head of Growth
                 </h3>
                 <p className="text-slate-400 text-sm mb-8">
-                  Growth &amp; Operations
+                  Acquisition &amp; ROI
                 </p>
 
                 <div className="w-full h-px bg-slate-100 mb-8"></div>
 
                 <p className="text-slate-600 leading-relaxed mb-8 italic">
-                  "A beautiful product that no one sees is a failure. We bridge
-                  the gap between technical excellence and market penetration."
+                  "A beautiful product that no one sees is a failure. My job is to flood your new digital engine with qualified traffic through SEO and paid campaigns."
                 </p>
 
-                {/* Improved Stats Styling */}
                 <div className="mt-auto grid grid-cols-3 gap-2 w-full text-center">
                   <div className="bg-red-50 rounded-xl p-3 border border-red-100">
                     <span className="block text-xl font-black text-red-700">
-                      $2M+
+                      High
                     </span>
                     <span className="text-[10px] font-bold text-red-400 uppercase tracking-wide">
-                      Managed
+                      ROI
                     </span>
                   </div>
                   <div className="bg-red-50 rounded-xl p-3 border border-red-100">
@@ -156,10 +148,10 @@ export default function AboutPage() {
                   </div>
                   <div className="bg-red-50 rounded-xl p-3 border border-red-100">
                     <span className="block text-xl font-black text-red-700">
-                      Ops
+                      Ads
                     </span>
                     <span className="text-[10px] font-bold text-red-400 uppercase tracking-wide">
-                      Lead
+                      Pro
                     </span>
                   </div>
                 </div>
@@ -167,10 +159,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Philosophy Section */}
-      <div className="py-24 bg-white border-y border-slate-100">
+      <section className="py-24 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Left Column */}
@@ -180,43 +172,37 @@ export default function AboutPage() {
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                The DevCortex Way
+                Stop juggling freelancers.
               </h2>
 
               <p className="text-lg text-slate-600 mb-6">
-                Most agencies are either purely creative or purely technical. We
-                occupy the rare middle ground where{" "}
-                {/* Changed underline to Red to flow with the text */}
-                <span className="text-slate-900 font-semibold underline decoration-red-500 decoration-2 underline-offset-4">
-                  logic meets leverage
-                </span>
-                .
+                Most businesses have a "web guy" and a "marketing guy," and they
+                rarely talk to each other. This creates broken funnels.
               </p>
 
               <p className="text-slate-500 leading-relaxed mb-8">
-                We don't just take orders. We diagnose the business bottleneck
-                first, then prescribe the exact digital intervention
-                needed—whether that's a simple CMS site or a complex AI-driven
-                SaaS platform.
+                At DeepDev, we unify the process. We build the site 
+                <span className="italic"> knowing </span> it needs to rank for SEO. 
+                We build the app <span className="italic"> knowing </span> it needs to convert ad traffic.
               </p>
 
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                   <span className="text-slate-700 font-medium">
-                    Data-First Decision Making
+                    Technical SEO built-in, not added on.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                   <span className="text-slate-700 font-medium">
-                    Rapid Iteration Cycles
+                    Landing pages optimized for Ad Quality Score.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
                   <span className="text-slate-700 font-medium">
-                    Scalable Architecture by Default
+                    Data analytics setup to track every dollar.
                   </span>
                 </li>
               </ul>
@@ -233,14 +219,14 @@ export default function AboutPage() {
                 {/* Blue Orb (Code) */}
                 <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/4 w-48 h-48 bg-blue-500/10 rounded-full blur-xl flex items-center justify-center border border-blue-100/50">
                   <span className="font-bold text-blue-600 -translate-x-4 -translate-y-4">
-                    Code
+                    Build
                   </span>
                 </div>
 
-                {/* Red Orb (Strategy) - Changed from Orange */}
+                {/* Red Orb (Strategy) */}
                 <div className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-xl flex items-center justify-center border border-red-100/50">
                   <span className="font-bold text-red-600 translate-x-4 -translate-y-4">
-                    Strategy
+                    Scale
                   </span>
                 </div>
 
@@ -249,23 +235,23 @@ export default function AboutPage() {
                     <Boxes className="w-5 h-5" />
                   </div>
                   <span className="text-sm font-bold text-slate-900">
-                    Digital
+                    Full Cycle
                     <br />
-                    Intelligence
+                    Growth
                   </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Process Section */}
-      <div className="py-24 bg-slate-50">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              From Chaos to Clarity
+              From Concept to Customer
             </h2>
             <p className="text-slate-600">
               Our proven roadmap for digital transformation.
@@ -273,7 +259,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative">
-            {/* Connection Line - Hidden on Mobile, Block on LG */}
+            {/* Connection Line - Hidden on Mobile */}
             <div className="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-slate-200 z-0"></div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -283,11 +269,10 @@ export default function AboutPage() {
                   <Stethoscope className="w-7 h-7" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  1. Diagnosis
+                  1. Discovery
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  We audit your current tech stack and market position to
-                  identify inefficiencies.
+                  We analyze your business goals, target audience, and current bottlenecks.
                 </p>
               </div>
 
@@ -297,11 +282,10 @@ export default function AboutPage() {
                   <Boxes className="w-7 h-7" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
-                  2. Blueprint
+                  2. Architecture
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Mapping out the architecture, selecting the right tools (CMS
-                  vs Custom), and strategy.
+                  We design the technical stack (Web/App) and the marketing funnel strategy.
                 </p>
               </div>
 
@@ -314,8 +298,7 @@ export default function AboutPage() {
                   3. Construction
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Agile development sprints with regular updates. Code meets
-                  design.
+                  Our engineers build the product while our marketers prep the ad campaigns.
                 </p>
               </div>
 
@@ -325,33 +308,30 @@ export default function AboutPage() {
                   <Rocket className="w-7 h-7" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">
-                  4. Ignition
+                  4. Ignition & Scale
                 </h3>
                 <p className="text-slate-400 text-sm leading-relaxed">
-                  Launch, monitor, and optimize. Marketing campaigns go live to
-                  drive traffic.
+                  We launch the product and turn on the traffic. Then we optimize for profit.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* CTA Section */}
-      <div className="py-24 bg-white text-slate-900 overflow-hidden relative border-t border-slate-100">
+      <section className="py-24 bg-white text-slate-900 overflow-hidden relative border-t border-slate-100">
         <div className="absolute inset-0 tech-noise opacity-30 pointer-events-none"></div>
-        {/* Background Gradients consistent with Theme */}
-        <div className="absolute top-0 right-0 w-125 h-125 bg-blue-100/50 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-125 h-125 bg-red-100/50 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-100/50 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tight text-slate-900">
-            Ready to architect your future?
+            Ready to scale your business?
           </h2>
 
           <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto">
-            Whether you need a rapid CMS launch or a custom enterprise solution,
-            we have the brainpower to execute.
+            Whether you need a new website, a custom app, or more leads from Google & Meta—we have the team to make it happen.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -359,17 +339,17 @@ export default function AboutPage() {
               href="/contact"
               className="bg-red-600 text-white h-14 px-8 rounded-full font-bold hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl shadow-red-600/25 flex items-center justify-center gap-2 text-lg"
             >
-              Book a Strategy Call
+              Start Your Project
             </Link>
             <Link
               href="/work"
               className="bg-white border border-slate-200 text-slate-900 h-14 px-8 rounded-full font-bold hover:bg-slate-50 transition-colors flex items-center justify-center gap-2 text-lg shadow-sm"
             >
-              View Case Studies
+              View Our Work
             </Link>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
