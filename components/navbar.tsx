@@ -25,11 +25,11 @@ export const Navbar = () => {
           <Link href="/" className="flex items-center gap-3 group">
             <img
               src="/logo.svg"
-              alt="Deep Dev Solutions logo"
+              alt="DeepDev Solutions logo"
               className="w-8 h-8 object-contain transition-transform group-hover:scale-105"
             />
             <h2 className="text-xl font-bold tracking-tight text-slate-900">
-              Deep Dev Solutions
+              DeepDev Solutions
             </h2>
           </Link>
 

@@ -30,10 +30,10 @@ export default function AboutPage() {
           </div>
 
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] text-slate-900">
-            Solid - Engineering
+            Two Brains.
             <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-red-600">
-              Explosive Growth
+              One Outcome.
             </span>
           </h1>
 
@@ -188,7 +188,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-slate-500 leading-relaxed mb-8">
-                At DeepDev, we unify the process. We build the site
+                At DeepDev Solutions, we unify the process. We build the site
                 <span className="italic"> knowing </span> it needs to rank for
                 SEO. We build the app <span className="italic"> knowing </span>{" "}
                 it needs to convert ad traffic.

@@ -72,9 +72,9 @@ export default function ContactPage() {
                     </p>
                     <a
                       className="text-slate-900 font-medium hover:text-red-600 transition-colors"
-                      href="mailto:hello@deepdevsolutions.com"
+                      href="mailto:info@deepdevsolutions.com"
                     >
-                      hello@DeepDev.com
+                      info@deepdevsolutions.com
                     </a>
                   </div>
                 </div>
