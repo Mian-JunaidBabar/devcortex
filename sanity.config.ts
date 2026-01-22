@@ -1,5 +1,4 @@
-"use client";
-
+// "use client";
 import { structureTool } from "sanity/structure";
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `\app\studio\[[...tool]]\page.tsx` route
@@ -11,6 +10,7 @@ import { defineConfig } from "sanity";
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { structure } from "./sanity/structure";
 import { schema } from "./sanity/schemaTypes";
+
 
 export default defineConfig({
   basePath: "/studio",
