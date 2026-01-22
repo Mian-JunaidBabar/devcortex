@@ -20,15 +20,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden bg-slate-50 pt-24 pb-20 lg:pt-28 lg:pb-32 border-b border-slate-100">
         {/* Background Gradients */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-150 h-150 bg-blue-100/60 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-red-100/60 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.03] pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-[1.1] text-slate-900">
             We Build Digital Products
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-red-600">
               & Scale Them to Profit.
             </span>
           </h1>
@@ -60,7 +60,6 @@ export default function Home() {
       <section className="py-24 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            
             {/* BUILD Card (Blue) */}
             <div className="group relative bg-blue-50/50 rounded-[2rem] p-10 border border-blue-100 hover:border-blue-300 transition-all hover:shadow-2xl hover:shadow-blue-600/10">
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -141,14 +140,13 @@ export default function Home() {
       {/* Ecosystem Section */}
       <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div className="mb-16 md:text-center max-w-3xl mx-auto">
-  <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-    The DeepDev Solutions Ecosystem
-  </h2>
+          <div className="mb-16 md:text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              The DeepDev Solutions Ecosystem
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]">
-            
             {/* AI & Automation */}
             <div className="md:col-span-2 bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-8 overflow-hidden relative group hover:shadow-md transition-all">
               <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-purple-100 rounded-full blur-3xl group-hover:bg-purple-200 transition-colors"></div>
@@ -161,7 +159,7 @@ export default function Home() {
                 </h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
                   Streamline your operations. We deploy custom chatbots and
-                  workflow automations that handle customer support and leads 
+                  workflow automations that handle customer support and leads
                   24/7, saving you 20+ hours a week.
                 </p>
                 <div className="flex gap-2 flex-wrap">
@@ -183,7 +181,7 @@ export default function Home() {
 
             {/* Full Stack Development */}
             <div className="md:row-span-2 bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm flex flex-col relative overflow-hidden group hover:shadow-md transition-all">
-              <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+              <div className="absolute top-0 right-0 w-full h-1 bg-linear-to-r from-blue-500 to-cyan-400"></div>
               <div className="mb-auto relative z-10">
                 <div className="size-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
                   <Smartphone className="w-6 h-6" />
@@ -234,7 +232,8 @@ export default function Home() {
                   Paid Acquisition
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Meta (Facebook/Insta) & Google Ads optimized for low Cost Per Lead.
+                  Meta (Facebook/Insta) & Google Ads optimized for low Cost Per
+                  Lead.
                 </p>
               </div>
             </div>
@@ -252,7 +251,8 @@ export default function Home() {
                   SEO & Analytics
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  Technical SEO audits and real-time data dashboards to track ROI.
+                  Technical SEO audits and real-time data dashboards to track
+                  ROI.
                 </p>
               </div>
             </div>
