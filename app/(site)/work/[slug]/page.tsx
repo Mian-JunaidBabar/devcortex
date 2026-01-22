@@ -93,13 +93,10 @@ export default async function CaseStudyPage({ params }: PageProps) {
           {/* Image */}
           {project.mainImage && (
             <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-              <Image
+              <img
                 src={project.mainImage}
                 alt={project.title}
-                width={1200}
-                height={675}
                 className="w-full h-auto"
-                priority
               />
             </div>
           )}

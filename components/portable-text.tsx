@@ -13,27 +13,27 @@ interface PortableTextRendererProps {
 const components: PortableTextComponents = {
   block: {
     h1: ({ children }) => (
-      <h1 className="text-4xl md:text-5xl font-black text-white mb-6 mt-12 first:mt-0">
+      <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 mt-12 first:mt-0">
         {children}
       </h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 mt-10 first:mt-0">
+      <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 mt-10 first:mt-0">
         {children}
       </h2>
     ),
     h3: ({ children }) => (
-      <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 mt-8 first:mt-0">
+      <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3 mt-8 first:mt-0">
         {children}
       </h3>
     ),
     h4: ({ children }) => (
-      <h4 className="text-xl font-bold text-white mb-3 mt-6 first:mt-0">
+      <h4 className="text-xl font-bold text-slate-900 mb-3 mt-6 first:mt-0">
         {children}
       </h4>
     ),
     normal: ({ children }) => (
-      <p className="text-slate-300 text-lg leading-relaxed mb-6">{children}</p>
+      <p className="text-black text-lg leading-relaxed mb-6">{children}</p>
     ),
     blockquote: ({ children }) => (
       <blockquote className="border-l-4 border-orange-500 pl-6 my-8 italic text-slate-400 text-xl">
@@ -43,12 +43,12 @@ const components: PortableTextComponents = {
   },
   list: {
     bullet: ({ children }) => (
-      <ul className="list-disc list-outside ml-6 mb-6 space-y-2 text-slate-300">
+      <ul className="list-disc list-outside ml-6 mb-6 space-y-2 text-black">
         {children}
       </ul>
     ),
     number: ({ children }) => (
-      <ol className="list-decimal list-outside ml-6 mb-6 space-y-2 text-slate-300">
+      <ol className="list-decimal list-outside ml-6 mb-6 space-y-2 text-black">
         {children}
       </ol>
     ),
@@ -63,7 +63,7 @@ const components: PortableTextComponents = {
   },
   marks: {
     strong: ({ children }) => (
-      <strong className="font-bold text-white">{children}</strong>
+      <strong className="font-bold text-slate-900">{children}</strong>
     ),
     em: ({ children }) => <em className="italic">{children}</em>,
     code: ({ children }) => (
