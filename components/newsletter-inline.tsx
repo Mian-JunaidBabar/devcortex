@@ -24,7 +24,9 @@ export function NewsletterInline({
   helperText,
 }: Props) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [message, setMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,7 +50,7 @@ export function NewsletterInline({
       setMessage(
         result.data?.id === "existing"
           ? "You're already subscribed!"
-          : "Subscribed successfully."
+          : "Subscribed successfully.",
       );
       setEmail("");
     } else {
@@ -70,15 +72,18 @@ export function NewsletterInline({
   const sidebarButton = "bg-slate-900 text-white hover:bg-slate-800";
 
   return (
-    <form onSubmit={handleSubmit} className={`flex flex-col gap-3 ${className}`}>
+    <form
+      onSubmit={handleSubmit}
+      className={`flex flex-col gap-3 ${className}`}
+    >
       {status !== "idle" && (
         <div
           className={`text-sm px-3 py-2 rounded-md border ${
             status === "success"
               ? "bg-green-50 text-green-800 border-green-200"
               : status === "error"
-              ? "bg-red-50 text-red-800 border-red-200"
-              : "bg-blue-50 text-blue-800 border-blue-200"
+                ? "bg-red-50 text-red-800 border-red-200"
+                : "bg-blue-50 text-blue-800 border-blue-200"
           }`}
         >
           {status === "loading" ? "Submitting..." : message}

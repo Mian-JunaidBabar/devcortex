@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import { Mail, MapPin, Send, ChevronDown, Clock } from "lucide-react";
+import {
+  sendContactEmail,
+  subscribeToNewsletter,
+} from "@/actions/email.actions";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -12,6 +16,11 @@ export default function ContactPage() {
     details: "",
     newsletter: false,
   });
+
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [message, setMessage] = useState<string>("");
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -26,9 +35,52 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setStatus("loading");
+    setMessage("");
+
+    const fd = new FormData();
+    fd.append("name", formData.name.trim());
+    fd.append("email", formData.email.trim());
+    fd.append("budget", formData.budget);
+    fd.append("service", formData.service);
+    fd.append("details", formData.details.trim());
+
+    const contactResult = await sendContactEmail(fd);
+
+    if (!contactResult.success) {
+      setStatus("error");
+      setMessage(contactResult.error || "Failed to send message.");
+      return;
+    }
+
+    // If user opted into newsletter, subscribe them
+    if (formData.newsletter && formData.email.trim()) {
+      const subFormData = new FormData();
+      subFormData.append("email", formData.email.trim());
+      const subscribeResult = await subscribeToNewsletter(subFormData);
+
+      if (!subscribeResult.success) {
+        setStatus("error");
+        setMessage(
+          subscribeResult.error ||
+            "Message sent, but newsletter subscription failed.",
+        );
+        return;
+      }
+    }
+
+    setStatus("success");
+    setMessage("Message sent successfully. We'll reply within 24 hours.");
+    setFormData({
+      name: "",
+      email: "",
+      budget: "",
+      service: "",
+      details: "",
+      newsletter: false,
+    });
   };
 
   return (
@@ -119,6 +171,19 @@ export default function ContactPage() {
             {/* Right Column - Contact Form */}
             <div className="bg-white rounded-2xl p-8 md:p-10 shadow-2xl shadow-slate-200 border border-slate-100">
               <form onSubmit={handleSubmit} className="space-y-6">
+                {status !== "idle" && (
+                  <div
+                    className={`text-sm px-4 py-3 rounded-lg border ${
+                      status === "success"
+                        ? "bg-green-50 text-green-800 border-green-200"
+                        : status === "error"
+                          ? "bg-red-50 text-red-800 border-red-200"
+                          : "bg-blue-50 text-blue-800 border-blue-200"
+                    }`}
+                  >
+                    {status === "loading" ? "Sending..." : message}
+                  </div>
+                )}
                 {/* Name & Email Row */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -240,10 +305,11 @@ export default function ContactPage() {
 
                 {/* Submit Button */}
                 <button
-                  className="w-full bg-slate-900 text-white font-bold py-4 rounded-lg hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg shadow-slate-900/20 flex items-center justify-center gap-2"
+                  className="w-full bg-slate-900 text-white font-bold py-4 rounded-lg hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg shadow-slate-900/20 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                   type="submit"
+                  disabled={status === "loading"}
                 >
-                  Start Project
+                  {status === "loading" ? "Sending..." : "Start Project"}
                   <Send className="w-5 h-5" />
                 </button>
               </form>

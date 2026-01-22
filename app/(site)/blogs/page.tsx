@@ -1,7 +1,9 @@
 import { Mail, TrendingUp, ArrowRight, BookOpen } from "lucide-react";
+import { NewsletterInline } from "@/components/newsletter-inline";
 import { getPosts, type BlogPost } from "@/services/blog.service";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export const metadata = {
   title: "Insights | DevCortex",
@@ -100,19 +102,12 @@ export default async function BlogsPage() {
                       Get our best engineering tactics and growth hacks
                       delivered every Tuesday.
                     </p>
-                    <div className="flex flex-col gap-3">
-                      <input
-                        className="bg-slate-50 border border-slate-200 text-slate-900 placeholder:text-slate-400 rounded-xl text-sm px-4 py-3 focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all outline-none"
-                        placeholder="ceo@company.com"
-                        type="email"
-                      />
-                      <button className="bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
-                        Subscribe Free
-                      </button>
-                    </div>
-                    <p className="text-xs text-slate-400 mt-4 text-center">
-                      Join 2,000+ founders. Unsubscribe anytime.
-                    </p>
+                    <NewsletterInline
+                      variant="sidebar"
+                      placeholder="ceo@company.com"
+                      buttonLabel="Subscribe Free"
+                      helperText="Join 2,000+ founders. Unsubscribe anytime."
+                    />
                   </div>
                 </div>
 

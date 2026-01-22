@@ -1,15 +1,16 @@
-import Link from "next/link";
+import { NewsletterInline } from "@/components/newsletter-inline";
 import { Linkedin, Twitter, Instagram, Send } from "lucide-react";
+import Link from "next/link";
+
 
 export const Footer = () => {
   return (
     <footer className="bg-white border-t border-slate-200 pt-20 pb-12 relative overflow-hidden">
       {/* Subtle Background Pattern */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-slate-900 to-red-600"></div>
-      
+      <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-blue-600 via-slate-900 to-red-600"></div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
           {/* Brand Section */}
           <div className="flex flex-col gap-6">
             <Link href="/" className="flex items-center gap-3 group">
@@ -23,7 +24,8 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-slate-500 text-sm leading-relaxed">
-              Engineering digital products. Scaling revenue. The full-cycle partner for growth-minded businesses.
+              Engineering digital products. Scaling revenue. The full-cycle
+              partner for growth-minded businesses.
             </p>
             <div className="flex gap-4">
               <a
@@ -142,25 +144,19 @@ export const Footer = () => {
             <p className="text-slate-500 text-sm mb-4">
               Join 2,000+ founders receiving weekly growth &amp; tech insights.
             </p>
-            <form className="flex flex-col gap-3">
-              <input
-                className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all placeholder:text-slate-400"
-                placeholder="Enter your email"
-                type="email"
-              />
-              <button className="w-full py-3 rounded-lg bg-slate-900 text-white text-sm font-bold hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
-                Subscribe
-                <Send className="w-3 h-3" />
-              </button>
-            </form>
+            <NewsletterInline
+              variant="footer"
+              placeholder="Enter your email"
+              buttonLabel="Subscribe"
+            />
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
-<p className="text-sm text-slate-400">
-  © {new Date().getFullYear()} DeepDev Solutions All rights reserved.
-</p>
+          <p className="text-sm text-slate-400">
+            © {new Date().getFullYear()} DeepDev Solutions All rights reserved.
+          </p>
           <div className="flex gap-8 text-sm text-slate-400">
             <Link className="hover:text-slate-600 transition-colors" href="#">
               Privacy Policy
