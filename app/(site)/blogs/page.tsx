@@ -157,7 +157,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
       <article className="relative bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden hover:border-slate-300 hover:shadow-xl transition-all duration-300">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image */}
-          <div className="relative h-64 lg:h-112 overflow-hidden">
+          <div className="relative w-full aspect-square overflow-hidden">
             {post.mainImage ? (
               <Image
                 alt={post.title}
