@@ -4,9 +4,8 @@ import { getPosts, type BlogPost } from "@/services/blog.service";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export const metadata = {
-  title: "Insights | DevCortex",
+  title: "Insights | Deep Dev Solutions",
   description:
     "Deep dives into enterprise architecture, AI integration, and scalable growth strategies.",
 };
